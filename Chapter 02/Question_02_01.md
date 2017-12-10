@@ -1,4 +1,5 @@
 ! A sequential version of the problem run on the CPU to access accurate value.
+```
 program main 
     use omp_lib
     implicit none 
@@ -38,11 +39,9 @@ program main
     end do 
 
     elapsed_time = omp_get_wtime() - start_time
-    
-    ! print to console
     print *, 'Program runs in ', elapsed_time, ' seconds'
-    print *, 'right(1:5) ',  right(1:5)
-    print *, 'left(1:5) ',  left(1:5)
+    print *, 'Last element in passing_count', passing_count
 
     deallocate(moving, left, right)
 end program main
+```
