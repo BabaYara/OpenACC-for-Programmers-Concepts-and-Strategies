@@ -1,6 +1,5 @@
 ! Second Version with a few more directives to speed things up a bit. 
 ```
-! A sequential version of the problem run on the CPU. Takes around 0.0189 seconds to complete.
 program main 
     use omp_lib
     implicit none 
