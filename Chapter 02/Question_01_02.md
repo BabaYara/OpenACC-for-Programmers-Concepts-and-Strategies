@@ -1,5 +1,6 @@
 ! A sequential version of the problem run on the GPU. Takes around 0.0181 seconds to complete.
-program main 
+```
+program main GPUsequential 
     use omp_lib
     implicit none 
     integer              :: i, Nsize
@@ -35,5 +36,6 @@ program main
     print *, 'Program run in ', elapsed_time, ' seconds'
 
     deallocate(part1, part2)
-end program main
+end program main GPUsequential
+```
 
