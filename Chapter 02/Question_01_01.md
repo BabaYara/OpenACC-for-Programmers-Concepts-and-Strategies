@@ -1,4 +1,5 @@
 ! A sequential version of the problem run on the CPU. Takes around 0.0099 seconds to complete.
+```
 program main CPUsequential_No_Accel
     use omp_lib
     implicit none 
@@ -33,3 +34,4 @@ program main CPUsequential_No_Accel
 
     deallocate(part1, part2)
 end program main CPUsequential_No_Accel
+```
